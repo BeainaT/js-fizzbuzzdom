@@ -4,21 +4,36 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: rgb(5, 5, 78);
+    color: #fff;
+    font-family: sans-serif;
+}
 /*CONTAINER*/
 .container {
     max-width: 1200px;
     margin: auto;
-
+    text-align: center;
 }
-ul.list {
+h1 {
+    font-size: 4em;
+    padding: 1em 0;
+}
+ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    justify-content: center;
+    gap: 1em;
 }
 li {
-    border: 1px solid;
-    width: calc(100% / 7);
+    border-radius: 1em;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
     background-color: yellow;
+    color: #000;
+    font-weight: 600;
 }
 .fizz {
     background-color: aqua;

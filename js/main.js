@@ -17,17 +17,26 @@ for (let i = 1; i <= 100; i++) {
     }
 }
 //MILESTONE 2
-//append html element with the consistent number or string in DOM existing container
+//append html element with the related number or string in DOM existing container
 //MILESTONE 3
 //apply different style for different outcome
-const list = document.querySelector(".list");
+const listBox = document.querySelector(".container");
+//created title and appendend it to container
+const title = document.createElement("h1");
+listBox.append(title);
+title.innerHTML = "FizzBuzzDOM"
+//created ul element and appended it to container
+const list = document.createElement("ul");
+listBox.append(list);
 for (let i = 1; i <= 100; i++) {
+    //created li element and appended it to ul
     const liElement = document.createElement("li");
+    list.append(liElement);
     let fizzNumber = i % 3 === 0;
     let buzzNumber = i % 5 === 0;
     if ((fizzNumber) && (buzzNumber)) {
-        liElement.innerText = "fizzbuzz";
-        liElement.classList.add("fizzbuzz");
+        liElement.innerText = "fizzbuzz"; //string for related number
+        liElement.classList.add("fizzbuzz"); //MILESTONE 3
     } else if (fizzNumber) {
         liElement.innerText = "fizz";
         liElement.classList.add("fizz");
@@ -35,7 +44,8 @@ for (let i = 1; i <= 100; i++) {
         liElement.innerText = "buzz";
         liElement.classList.add("buzz");
     } else {
-        liElement.innerText = i;
+        liElement.innerText = i; 
     }
-    list.append(liElement);
+    
 }
+document.getElementById("title").innerHTML = "FizzBuzzDOM";
