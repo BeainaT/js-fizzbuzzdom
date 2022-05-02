@@ -14,10 +14,11 @@ body {
     max-width: 1200px;
     margin: auto;
     text-align: center;
+    padding: 1em 0;
 }
 h1 {
     font-size: 4em;
-    padding: 1em 0;
+    margin-bottom: 0.5em;
 }
 ul {
     display: flex;
