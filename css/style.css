@@ -15,7 +15,17 @@ ul.list {
     flex-wrap: wrap;
     list-style: none;
 }
-.list li {
+li {
     border: 1px solid;
     width: calc(100% / 7);
+    background-color: yellow;
+}
+.fizz {
+    background-color: aqua;
+}
+.fizzbuzz {
+    background-color: violet;
+}
+.buzz {
+    background-color: lightgreen;
 }

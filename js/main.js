@@ -18,6 +18,8 @@ for (let i = 1; i <= 100; i++) {
 }
 //MILESTONE 2
 //append html element with the consistent number or string in DOM existing container
+//MILESTONE 3
+//apply different style for different outcome
 const list = document.querySelector(".list");
 for (let i = 1; i <= 100; i++) {
     const liElement = document.createElement("li");
@@ -25,14 +27,15 @@ for (let i = 1; i <= 100; i++) {
     let buzzNumber = i % 5 === 0;
     if ((fizzNumber) && (buzzNumber)) {
         liElement.innerText = "fizzbuzz";
+        liElement.classList.add("fizzbuzz");
     } else if (fizzNumber) {
         liElement.innerText = "fizz";
+        liElement.classList.add("fizz");
     } else if (buzzNumber) {
         liElement.innerText = "buzz";
+        liElement.classList.add("buzz");
     } else {
         liElement.innerText = i;
     }
     list.append(liElement);
 }
-//MILESTONE 3
-//apply different style for different outcome
